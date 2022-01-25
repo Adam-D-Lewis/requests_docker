@@ -1,9 +1,9 @@
-{ pkgs, itemdb }:    
+{ pkgs }:    
     
 pkgs.dockerTools.buildLayeredImage {    
-  name = "itemdb";    
+  name = "dask";    
   tag = "latest";    
-  contents = [ itemdb.defaultPackage.x86_64-linux pkgs.bash pkgs.lsd pkgs.vim pkgs.findutils pkgs.gnugrep ];    
+  contents = [ pkgs.python3Packages.requests pkgs.bash pkgs.lsd pkgs.vim pkgs.findutils pkgs.gnugrep ];    
   config = {    
     Cmd = [ "bash" ];    
   };    

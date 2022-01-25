@@ -1,37 +1,6 @@
 {
   "nodes": {
-    "itemdb": {
-      "inputs": {
-        "nixpkgs": "nixpkgs"
-      },
-      "locked": {
-        "lastModified": 1643090063,
-        "narHash": "sha256-KWb4XlmdvVzzs502hlDu3sPzvzGLRghjwXOGnBmYkjE=",
-        "type": "git",
-        "url": "file:///home/balast/CodingProjects/nix/nix-flakes/itemdb_flake"
-      },
-      "original": {
-        "type": "git",
-        "url": "file:///home/balast/CodingProjects/nix/nix-flakes/itemdb_flake"
-      }
-    },
     "nixpkgs": {
-      "locked": {
-        "lastModified": 1642903813,
-        "narHash": "sha256-0lNfGW8sNfyTrixoQhVG00Drl/ECaf5GbfKAQ1ZDoyE=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "689b76bcf36055afdeb2e9852f5ecdd2bf483f87",
-        "type": "github"
-      },
-      "original": {
-        "owner": "nixos",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
-    "nixpkgs_2": {
       "locked": {
         "lastModified": 1642961095,
         "narHash": "sha256-RLatktZmvwFBOyqdoIk4qdS4OGKB7aKIvvs4ZP2L8D8=",
@@ -49,8 +18,7 @@
     },
     "root": {
       "inputs": {
-        "itemdb": "itemdb",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs"
       }
     }
   },
